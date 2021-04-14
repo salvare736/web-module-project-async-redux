@@ -9,11 +9,23 @@ const initialState = {
 export const reducer = (state = initialState, action) => {
     switch(action.type) {
         case FETCH_UNITS_START:
-            return state;
+            return {
+                ...state,
+                isLoading: true
+            };
         case FETCH_UNITS_SUCCESS:
-            return state;
+            return {
+                ...state,
+                isLoading: false,
+                error: '',
+                units: action.payload
+            };
         case FETCH_UNITS_FAILURE:
-            return state;
+            return {
+                ...state,
+                isLoading: false,
+                error: action.payload
+            };
         default:
             return state;
     }
