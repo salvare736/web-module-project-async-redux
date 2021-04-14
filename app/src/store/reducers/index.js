@@ -11,7 +11,9 @@ export const reducer = (state = initialState, action) => {
         case FETCH_UNITS_START:
             return {
                 ...state,
-                isLoading: true
+                isLoading: true,
+                error: '',
+                units: []
             };
         case FETCH_UNITS_SUCCESS:
             return {

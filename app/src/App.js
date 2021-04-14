@@ -9,6 +9,7 @@ function App() {
         <h1>Age of Empires II</h1>
       </header>
       <section className='listsContainer'>
+        <h2>Complete Unit List</h2>
         <UnitList />
       </section>
     </div>

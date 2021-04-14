@@ -13,8 +13,8 @@ const UnitList = (props) => {
 
     return (
         <div className='unitContainer'>
-            {props.isLoading ? <h3>Loading data...</h3> : null}
-            {props.error ? <p style={{ color: 'red' }}>{props.error}</p> : null}
+            {props.isLoading ? <h2 style={{ marginLeft: '40%' }}>Loading data...</h2> : null}
+            {props.error ? <p style={{ marginLeft: '40%', color: 'red', fontWeight: 'bold' }}>{props.error} :(</p> : null}
             {props.units.map(unit => (
                 <Unit key={unit.id} name={unit.name} age={unit.age} hitPoints={unit.hit_points} lineOfSight={unit.line_of_sight} attack={unit.attack} range={unit.range} movementRate={unit.movement_rate} />
             ))}
