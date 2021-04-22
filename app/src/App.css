@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.listsContainer {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.unitContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.unitData {
+  border: double;
+  width: 350px;
+  margin: 20px;
+}
